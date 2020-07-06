@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
-import { List, TouchableRipple } from 'react-native-paper';
+import { List, FAB } from 'react-native-paper';
 
 const EatenItemsScreen = () => (
 	<View style={{width: '100%'}}>
@@ -19,6 +19,13 @@ const EatenItemsScreen = () => (
 			<EatenItem />
 			<EatenItem />
 		</ScrollView>
+
+		<FAB
+			style={{position: 'absolute', margin: 16, right: 0, bottom: 16, backgroundColor: '#ffaf29'}}
+			icon="plus"
+			color='white'
+			onPress={() => console.log('Pressed')}
+		/>
 	</View>
 );
 

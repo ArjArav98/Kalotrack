@@ -7,7 +7,7 @@ import ItemCaloriesListScreen from './src/screens/ItemCaloriesListScreen'
 
 export default function App() {
   return (
-    <ItemCaloriesListScreen />
+    <EatenItemsScreen />
   );
 }
 
