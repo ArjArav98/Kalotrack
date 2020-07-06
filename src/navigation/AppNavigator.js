@@ -19,7 +19,7 @@ function MyTabs() {
 	  barStyle={{backgroundColor: 'white'}}
     >
       <Tab.Screen
-        name="Feed"
+        name="Tracker"
         component={EatenItemsScreen}
         options={{
           tabBarLabel: 'Tracker',
@@ -29,12 +29,32 @@ function MyTabs() {
         }}
       />
       <Tab.Screen
-        name="Notifications"
+        name="Calories-Table"
         component={ItemCaloriesListScreen}
         options={{
           tabBarLabel: 'Calories Table',
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="table" color={color} size={26} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Goals"
+        component={ItemCaloriesListScreen}
+        options={{
+          tabBarLabel: 'Goals',
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="trophy" color={color} size={26} />
+          ),
+        }}
+      />
+	  <Tab.Screen
+        name="More"
+        component={ItemCaloriesListScreen}
+        options={{
+          tabBarLabel: 'Goals',
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="dots-horizontal" color={color} size={26} />
           ),
         }}
       />
@@ -44,8 +64,6 @@ function MyTabs() {
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <MyTabs />
-    </NavigationContainer>
+    <MyTabs />
   );
 }

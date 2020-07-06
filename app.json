@@ -1,26 +1,35 @@
 {
-  "expo": {
-    "name": "Kalotrack",
-    "slug": "Kalotrack",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
-  }
+	"name": "Kalotrack",
+	displayName: "Kalotrack",
+	"expo": {
+		"name": "Kalotrack",
+		"slug": "Kalotrack",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/icon.png",
+		"splash": {
+			"image": "./assets/splash.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#ffffff"
+		},
+		"updates": {
+			"fallbackToCacheTimeout": 0
+		},
+		"assetBundlePatterns": [
+			"**/*"
+		],
+		"ios": {
+			"bundleIdentifier": "com.arjunaravind.kalotrack",
+			"buildNumber": "1.0.0"
+		},
+		"android": {
+			"package": "com.arjunaravind.kalotrack",
+			"versionCode": 1
+		},
+		"web": {
+			"favicon": "./assets/favicon.png"
+		},
+		"description": "An app which lets users track and set goals for their daily calorie consumption.",
+		"githubUrl": "https://github.com/ArjArav98/Kalotrack"
+	}
 }
