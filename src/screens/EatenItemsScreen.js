@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import { List, FAB } from 'react-native-paper';
 
 const EatenItemsScreen = () => (
-	<View style={{width: '100%'}}>
+	<View style={{width: '100%', backgroundColor: 'white'}}>
 		<ScrollView style={{width: '100%'}}>
 			<DateHeader />		
 			<EatenItem />
@@ -21,9 +21,9 @@ const EatenItemsScreen = () => (
 		</ScrollView>
 
 		<FAB
-			style={{position: 'absolute', margin: 16, right: 0, bottom: 16, backgroundColor: '#ffaf29'}}
+			style={{position: 'absolute', margin: 16, right: 0, bottom: 16, backgroundColor: 'white'}}
 			icon="plus"
-			color='white'
+			color='#ffaf29'
 			onPress={() => console.log('Pressed')}
 		/>
 	</View>

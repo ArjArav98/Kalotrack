@@ -1,21 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import EatenItemsScreen from './src/screens/EatenItemsScreen'
-import ItemCaloriesListScreen from './src/screens/ItemCaloriesListScreen'
+import AppNavigator from './src/navigation/AppNavigator'
 
 export default function App() {
   return (
-    <EatenItemsScreen />
+    <AppNavigator />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

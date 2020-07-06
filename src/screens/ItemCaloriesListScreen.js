@@ -4,7 +4,7 @@ import { DataTable, FAB } from 'react-native-paper';
 
 const ItemCaloriesListScreen = () => (
 
-	<View style={{width: '100%', flex: 1}}>
+	<View style={{width: '100%', flex: 1, backgroundColor: 'white'}}>
 
 		<ScrollView>
 				
